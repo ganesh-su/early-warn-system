@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Early Warning System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script data-main = "libs/main" src = "https://requirejs.org/docs/release/2.3.6/r.js"></script>
+  <script data-main="fetch.js" src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+  <!--<script>
+      var testObject = [  
+      {  
+          "alertId": 1004,  
+          "groupName": "Preseason",  
+          "alert": "Occupancy permit Application",  
+          "details": "Have you applied for your occupancy permit?",
+          "active": "Yes",
+          "parentAlert": "None",
+          "showReason": "Yes"
+          
+      }, 
+
+      {  
+          "alertId": 1005,  
+          "groupName": "Preseason",  
+          "alert": "Occupancy permit Application",  
+          "details": "Have you applied for your occupancy permit?",
+          "active": "Yes",
+          "parentAlert": "None",
+          "showReason": "Yes"
+          
+      }];
+        window.localStorage.setItem('jsonData', JSON.stringify(testObject));
+
+        var retrievedObject = JSON.parse(localStorage.getItem(testObject));
+
+        var tbody = document.getElementById('tbody');
+
+        for (var i = 0; i < retrievedObject.length; i++) {
+          var tr = "<tr>";
+          tr += "<td>Name</td>" + "<td>" + retrievedObject[i].alertId + "</td></tr>";
+          tr += "<td>Time</td>" + "<td>" + retrievedObject[i].groupName + "</td></tr>";
+          tr += "<td>Time</td>" + "<td>" + retrievedObject[i].alert + "</td></tr>";
+          tr += "<td>Score</td>" + "<td>" + retrievedObject[i].details + "</td></tr>";
+          tr += "<td>Time</td>" + "<td>" + retrievedObject[i].active + "</td></tr>";
+          tr += "<td>Time</td>" + "<td>" + retrievedObject[i].parentAlert + "</td></tr>";
+          tr += "<td>Time</td>" + "<td>" + retrievedObject[i].showReason + "</td></tr>";
+          tbody.innerHTML += tr;
+        }
+  </script> -->
+</head>
+<body>
+
+<div class="table-responsive">
+  <h2>Early Warning System</h2>
+  <p>Click new button to add new data...! </p>  
+  <button type="button" class="btn btn-primary padding-btm" (click)="openDialog()"><span class="glyphicon glyphicon-plus"></span> Add New Alert</button>          
+  <table id="early_sys_id" class="table table-hover table-bordered table-striped table-condensed table-responsive">
+    <thead class="thread-dark">
+    <tr>  
+        <th>Alert ID</th>  
+        <th>Group Name</th>  
+        <th>Alert</th>  
+        <th>Details</th>  
+        <th>Active</th>  
+        <th>Parent Alert</th>  
+        <th>Show Reason</th>  
+        <th>Actions</th>  
+    </tr>  
+    </thead>
+    <tbody id="tbody">
+    </tbody>
+    <tbody>  
+        <tr *ngFor="let student of students">  
+          <td>{{ student.alertId }}</td>  
+          <td>{{ student.groupName }}</td>  
+          <td>{{ student.alert }}</td>  
+          <td>{{ student.details }}</td>  
+          <td>{{ student.active }}</td>  
+          <td>{{ student.parentAlert }}</td>  
+          <td>{{ student.showReason }}</td>  
+          <td>
+            <button type="button" class="btn btn-success padding-left" (click)="editDialog(student)" ><span class="glyphicon glyphicon-edit"></span></button>
+            <button type="button" class="btn btn-danger padding-left"  (click)="deleteJsondata(student)" ><span class="glyphicon glyphicon-trash"></span></button>
+          </td>
+        </tr>  
+      </tbody> 
+  </table>
+</div>
+
+</body>
+</html>
+

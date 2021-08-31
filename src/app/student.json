@@ -1,0 +1,63 @@
+[  
+    {  
+        "alertId": 1004,  
+        "groupName": "Preseason",  
+        "alert": "Occupancy permit Application",  
+        "details": "Have you applied for your occupancy permit?",
+        "active": "Yes",
+        "parentAlert": "None",
+        "showReason": "Yes"
+        
+    }, 
+
+    {  
+        "alertId": 1005,  
+        "groupName": "Preseason",  
+        "alert": "Occupancy permit Application",  
+        "details": "Have you applied for your occupancy permit?",
+        "active": "Yes",
+        "parentAlert": "None",
+        "showReason": "Yes"
+        
+    }, 
+    {  
+        "alertId": 1006,  
+        "groupName": "Preseason",  
+        "alert": "Occupancy permit Application",  
+        "details": "Have you applied for your occupancy permit?",
+        "active": "Yes",
+        "parentAlert": "None",
+        "showReason": "Yes"
+        
+    }, 
+    {  
+        "alertId": 1007,  
+        "groupName": "Preseason",  
+        "alert": "Occupancy permit Application",  
+        "details": "Have you applied for your occupancy permit?",
+        "active": "Yes",
+        "parentAlert": "None",
+        "showReason": "Yes"
+        
+    }, 
+    {  
+        "alertId": 1008,  
+        "groupName": "Preseason",  
+        "alert": "Occupancy permit Application",  
+        "details": "Have you applied for your occupancy permit?",
+        "active": "Yes",
+        "parentAlert": "None",
+        "showReason": "Yes"
+        
+    }, 
+    {  
+        "alertId": 1009,  
+        "groupName": "Preseason",  
+        "alert": "Occupancy permit Application",  
+        "details": "Have you applied for your occupancy permit?",
+        "active": "Yes",
+        "parentAlert": "None",
+        "showReason": "Yes"
+        
+    }
+  ]  

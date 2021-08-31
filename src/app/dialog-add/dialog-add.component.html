@@ -1,0 +1,16 @@
+<h3 mat-dialog-title>{{data.buttonName}} Alert </h3>
+<div mat-dialog-content>
+   
+  <input matInput  class = "form-control padding-btm" type="text" id="alertId" value={{data.alertId}} placeholder="Alert ID">
+  <input class = "form-control padding-btm" type="text" id="groupName" name="groupName" value={{data.groupName}} placeholder="Group Name">
+  <input class = "form-control padding-btm" type="text" id="alert" name="alert" value={{data.alert}} placeholder="Alert">
+  <input class = "form-control padding-btm" type="text" id="details" name="details" value={{data.details}} placeholder="Details">
+  <input class = "form-control padding-btm" type="text" id="active" name="active" value={{data.active}} placeholder="Active">
+  <input class = "form-control padding-btm" type="text" id="parentAlert" name="parentAlert" value={{data.parentAlert}} placeholder="Parent Alert">
+  <input class = "form-control padding-btm" type="text" id="showReason" name="showReason" value={{data.showReason}} placeholder="Show Reason">
+</div>
+<div mat-dialog-actions>
+    <button mat-button class="btn btn-primary padding-btm" (click)="confirm($event)" cdkFocusInitial>{{data.buttonName}}</button>
+    <button mat-button class="btn btn-primary padding-btm" (click)="cancel()">Cancel</button>
+  
+</div>

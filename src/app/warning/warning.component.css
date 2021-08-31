@@ -1,0 +1,13 @@
+.thread-dark {
+    background-color: blueviolet;
+    font-family: verdana;
+    font-size: 110%;
+}
+.padding-btm {
+    margin-bottom: 8px;
+    margin-left: 8px;
+    align-items: 'right';
+}
+.padding-left {
+    margin-left: 8px;
+}
